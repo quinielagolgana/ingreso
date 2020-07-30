@@ -1,1 +1,648 @@
 
+/ * Reseteo universal * /
+* {
+	borde : 0 ;
+	margen : 0;
+	relleno : 0;
+	tamaño de fuente : 1em;
+}
+/ * Cuerpo en todos los documentos * /
+cuerpo {	
+	/ * fondo: rgb (192,192,192); * /
+	fondo : url ( "../img/mosaico.png" ) repetir;
+}
+/ * alineación semántica en bloque * /
+artículo , figcaption , figura , pie de página , encabezado , hgroup , nav , sección {
+	pantalla : bloque;
+}
+/ * Cuerpo de la página de instrucciones * /
+cuerpo # inst {
+acolchado : 10 %  5 % ;
+}
+
+/ * Todos los Enlaces * /
+a .1 {
+	color : # fff ;
+	peso de fuente : negrita;
+	decoración de texto : ninguno;
+}
+un {
+	color : # fff ;
+	peso de fuente : negrita;
+	decoración de texto : ninguno;
+}
+a : desplazarse {
+	color : # 3c3f42 ;
+}
+
+/ * cuando es: hover es para cuando pasamos el mouse sobre elenlace * /
+a .1: desplazarse {
+	color : # FFF ;
+}
+
+/ * Botones id boton * /
+input # boton , input . boton {
+	fondo : rgba ( 0 , 0 , 0 , .3 );
+	tamaño de fuente : 24 px ;
+	font-family : "miríadaproregular" , Helvetica , Verdana;
+	pantalla : bloque en línea;
+	relleno : 5 px  10 px  6 px ;
+	color : # FFF ;
+	decoración de texto : ninguno;
+	-moz-border-radius : 6 px ;
+	-webkit-border-radius : 6 px ;
+	-moz-box-shadow : 0  1 px  3 px  rgba ( 0 , 0 , 0 , 0.6 );
+	-webkit-box-shadow : 0  1 px  3 px  rgba ( 0 , 0 , 0 , 0.6 );
+	sombra de texto : 0 -1px 1 px  rgba ( 0 , 0 , 0 , 0.25 );
+	borde superior : 0 px ; borde izquierdo : 0 px ;
+	borde derecho : 0 px ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	posición : relativa;
+	cursor : puntero;
+	ancho : 100 % ;
+	esquema : ninguno;
+}
+
+/ * Pasar el mouse en los botones id boton y en los parrafos de enlace (esta mas abajo) * /
+input # boton : hover , p . enlace : hover , entrada . boton : hover {
+	fondo : rgba ( 0 , 0 , 0 , .7 );
+}
+
+/ * Campos de texto id txt * /
+entrada . txt {
+	color : # 577bb8 ;
+	tamaño de fuente : 1 em ;
+	-moz-border-radius : 6 px ;
+	-webkit-border-radius : 6 px ;
+	altura : 40 px ;
+	alinear texto : centro;
+	ancho : 98 % ;
+	font-family : "miríadaproregular" , Helvetica , Verdana;
+}
+
+/ * parrafos de enlace * /
+p . enlace {
+	fondo : rgba ( 0 , 0 , 0 , .3 );
+	color : # FFF ;
+	tamaño de fuente : 1.5 em ;
+	ancho : 94 % ;
+	acolchado : 2 %  2 % ;
+	-moz-border-radius : 6 px ;
+	-webkit-border-radius : 6 px ;
+	-moz-box-shadow : 0  1 px  3 px  rgba ( 0 , 0 , 0 , 0.6 );
+	-webkit-box-shadow : 0  1 px  3 px  rgba ( 0 , 0 , 0 , 0.6 );
+	sombra de texto : 0 -1px 1 px  rgba ( 0 , 0 , 0 , 0.25 );
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	cursor : puntero;
+	alinear texto : centro;
+}
+
+/ * sección Índice Contenido Principal * /
+sección # icp {
+	ancho : 100 % ;
+	/ * fondo: rojo; * /
+	relleno : 10 %  0 % ;
+}
+/ * Seccion Indice Contenido Principal Usuarios * /
+sección # icpusu {
+	ancho : 90 % ;
+	acolchado : 1 %  5 % ;
+}
+
+/ * Seccion Indice Contenido General Usuarios * /
+sección . icgralusu {
+	/ * fondo: rgba (255,255,255,0.3); * /
+fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	radio de borde : 0.5 em ;
+	ancho : 31 % ;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	acolchado : 0  1 % ;
+	
+}
+sección . icgralusutabla { / * índice contenido general tabla * /
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	radio de borde : 0.5 em ;
+	ancho : 20 % ;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	acolchado : 0  1 % ;
+	
+}
+sección . icgralusucentro { / * índice contenido general centro * /
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	radio de borde : 0.5 em ;
+	ancho : 42 % ;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	acolchado : 0  1 % ;
+	
+}
+/ * sección por nombre del usuario * /
+
+sección # cabina {
+	color : blanco
+	alineación de texto : derecha;
+	peso de fuente : negrita;
+	ancho : 100 % ;
+	relleno : 1 %  0 ;
+	tamaño de fuente : 1.2 em ;
+}
+
+/ * Índice de sección Contenido Derecha Usuarios * /
+sección # icderusu {
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	radio de borde : 0.5 em ;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	ancho : 66 % ;
+}
+sección . icderusu {
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	radio de borde : 0.5 em ;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	ancho : 45 % ;
+}
+/ * sección Índice Contenido Izquierda * /
+sección # ici {
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	radio de borde : 0.5 em ;
+	pantalla : bloque en línea;
+	margen : 0  .5 % ;
+	acolchado : 1 %  1 % ;
+	alineación vertical : arriba;
+	ancho : 23 % ;
+}
+
+/ * sección Índice Contenido Centro * /
+sección # icc {
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	pantalla : bloque en línea;
+	margen : 0  .5 % ;
+	acolchado : 1 %  1 % ;
+	alineación vertical : arriba;
+	ancho : 51 % ;
+	
+}
+
+/ * sección Índice Contenido Derecha * /
+sección # icd {
+	radio de borde : 0.5 em ;
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	pantalla : bloque en línea;
+	margen : 0  .5 % ;
+	acolchado : 1 %  1 % ;
+	alineación vertical : arriba;
+	ancho : 16 % ;
+}
+
+/ * sección Contenido Instrucciones * /
+sección # conins {
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	radio de borde : 0.5 em ;
+	ancho : 90 % ;
+	acolchado : 3 %  5 % ;
+	
+}
+/ * Sección para el menú * /
+sección # contmenu {
+	ancho : 90 % ;
+	fondo : rgba ( 255 , 255 , 255 , 0.3 );
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	acolchado : 0  5 % ;
+}
+sección . menuicono {
+ancho : 10 % ;
+alineación vertical : arriba;
+pantalla : bloque en línea;
+}
+
+/ * sección Menú Instrucciones * /
+sección . menuins {
+	fondo : # 4C4F53 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	ancho : 30 % ;
+	alinear texto : centro;
+	alineación vertical : medio;
+	relleno superior : 2 % ;
+	alineación vertical : arriba;
+	pantalla : bloque en línea;
+	margen : 1.5 % ;
+	
+
+}
+sección . menuins2 {
+	fondo : # 4C4F53 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	ancho : 90 % ;
+	alinear texto : centro;
+	alineación vertical : medio;
+	relleno superior : 2 % ;
+	relleno inferior : 2 % ;
+	margen : 1.5 % ;
+	
+
+}
+sección . menuicoden {
+	ancho : 100 % ;
+	
+}
+sección . icononombre {
+	color : blanco
+	tamaño de fuente : 1.2 em ;
+}
+/ * secciones para el contenido * /
+sección . llenacont {
+	ancho : 100 % ;	
+}
+sección . llena1 {
+	ancho : 30 % ;
+	alineación vertical : arriba;
+	pantalla : bloque en línea;
+}
+
+sección . llena2 {
+	ancho : 38 % ;
+	relleno superior : 2 % ;
+	alineación vertical : arriba;
+	pantalla : bloque en línea;
+}
+
+
+seleccionar , seleccionar . trans {
+	ancho : 100 % ;
+	radio de borde : 10 px ;
+	altura : 40 px ;
+	acolchado : 0  10 % ;
+	borde : 1 px sólido # D9D9D9 ;
+	color : # 194888 ;
+	margen inferior : 10 px ;
+	tamaño de fuente : 18 px ;
+	alinear texto : centro;
+}
+seleccionar . trans {
+		fondo : rgba ( 255 , 255 , 255 , .5 );
+}
+
+/ * Parrafo de titulo principal * /
+p . ti1 {
+	fondo : # 3c3f42 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	tamaño de fuente : 1.2 em ;
+	margen : .5 %  1 % ;
+	acolchado : 1 %  1 % ;
+	alinear texto : centro;
+
+}
+p . ti12 {
+	ancho : 100 % ;
+	fondo : # 3c3f42 ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	tamaño de fuente : 1.2 em ;
+	acolchado : 2 %  0 ;
+	alinear texto : centro;
+}
+p . comen {
+	ancho : 98 % ;
+	fondo : # 3c3f42 ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : blanco
+	tamaño de fuente : 1 em ;
+	acolchado : 2 %  1 % ;
+	alinear texto : centro;
+
+}
+
+/ * Parrafo de titulo llenar quiniela * /
+sección . titulo ,  p . titulo {
+	fondo : # 3c3f42 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	tamaño de fuente : 1.2 em ;
+	margen : .5 %  1 % ;
+	relleno : .5 %  1 % ;
+	alinear texto : centro;
+
+}
+etiqueta . titulo {
+	color : # ffffff ;
+	tamaño de fuente : 1.2 em ;
+}
+sección . titulotrans ,  p . titulotrans {
+		antecedentes : rgba ( 60 , 63 , 66 , .5 );
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	tamaño de fuente : 1.2 em ;
+	margen : .5 %  1 % ;
+	relleno : .5 %  1 % ;
+	alinear texto : centro;
+}
+/ * Parrafo de título principal con botones * /
+p . ti11 , p . tierror , p . tibien {
+	fondo : # 3c3f42 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	tamaño de fuente : 1.5 em ;
+	margen : .5 %  1 % ;
+	acolchado : 1 %  1 % ;
+	alineación vertical : medio;
+	alinear texto : centro;
+
+}
+p . tierror { color : rojo;}
+p . tibien { color : verde;}
+p . parbl {
+	color : blanco
+	tamaño de fuente : 1.3 em ;
+}
+
+/ * Divicion de descripcion de instrucciones * /
+div # es {
+	fondo : # 3c3f42 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	tamaño de fuente : 1 em ;
+	margen : 1 %  1 % ;
+	acolchado : 2 %  1.5 % ;
+	alinear texto : justificar;
+}
+
+/ * Parrafo de texto o título secundario * /
+p . ti2 {
+	fondo : # 4c4f53 ;
+	radio de borde : 0.5 em ;
+	borde inferior : 1 px sólido rgba ( 0 , 0 , 0 , 0.25 );
+	color : # EAEAAE ;
+	margen : 1 %  1 % ;
+	acolchado : 1 %  .5 % ;
+	alinear texto : centro;
+	
+}
+
+/ * Logotipo de Imagenes * /
+img . icolo {
+	ancho : 48 % ;
+
+}
+img . icolo2 {
+	ancho : 100 % ;
+
+}
+
+/ * Imagenes menu instrucciones * /
+img . imgins {
+	ancho : 30 % ;
+	relleno : 2 %  2 %  2 %  0 % ;
+
+}
+
+img . navig {
+		ancho : 10 % ;
+	}
+mesa {
+	ancho : 100 % ;
+}
+sección . Texafu ,  sección . texafu2 {
+	alinear texto : centro;
+	ancho : 29 % ;
+	fondo : ninguno;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	acolchado : 1 %  1 % ;
+
+}
+sección . texafu2 {
+	ancho : 62 % ;
+
+}
+/ * secciones paratabla índice general * /
+sección . log_equipo {
+	ancho : 40 % ;
+	pantalla : bloque en línea;
+	alineación vertical : arriba;
+	alineación de texto : derecha;
+}
+sección . log_ptos {
+	ancho : 20 % ;
+	fondo : rojo;
+	pantalla : bloque en línea;
+	alineación vertical : abajo;
+	
+}
+p . puntaje {
+	alineación vertical : abajo;
+	tamaño de fuente : 3.5 em ;
+	fondo : # 000000 ;
+	-webkit-background-clip : texto;
+	-moz-background-clip : texto;
+	clip de fondo : texto;
+	color : transparente;
+	sombra de texto : 0 px  3 px  3 px  rgba ( 255 , 255 , 255 , 0.5 ) , 0 px -1px 1 px  rgba ( 0 , 0 , 0 , .3 );
+}
+
+p . puntajecal {
+	alineación vertical : abajo;
+	tamaño de fuente : 2 em ;
+	fondo : # 000000 ;
+	-webkit-background-clip : texto;
+	-moz-background-clip : texto;
+	clip de fondo : texto;
+	color : transparente;
+	sombra de texto : 0 px  3 px  3 px  rgba ( 0 , 128 , 0 , 0.5 ) , 0 px -1px 1 px  rgba ( 0 , 0 , 0 , .3 );
+}
+p . puntajenocal {
+	alineación vertical : abajo;
+	tamaño de fuente : 2 em ;
+	fondo : # 000000 ;
+	-webkit-background-clip : texto;
+	-moz-background-clip : texto;
+	clip de fondo : texto;
+	color : transparente;
+	sombra de texto : 0 px  3 px  3 px  rgba ( 0 , 128 , 0 , 0.5 ) , 0 px -1px 1 px  rgba ( 0 , 0 , 0 , .3 );
+}
+tabla . gral {
+	ancho : 100 % ;
+}
+img . equipo_tabla {
+	ancho : 40 % ;
+}
+tr1 {
+    color de fondo : rgb ( 58 ,  58 ,  62 );
+    color : rgb ( 255 ,  255 ,  255 );
+    posición de fondo : inicial inicial;
+    repetición de fondo : inicial inicial;
+}
+mesa . tablaEquipos  tr {
+    color de fondo : rgb ( 58 ,  58 ,  62 );
+    color : rgb ( 255 ,  255 ,  255 );
+    posición de fondo : inicial inicial;
+    repetición de fondo : inicial inicial;
+}
+
+/*3.-Media Query * /
+
+/ * Donde la resolucion sea mayora 1081px * /
+@media ( ancho mínimo : 1081 px ) {
+	p . ti1 ,  p . ti2 , a .1 {
+		tamaño de fuente : 1.3 em ;
+		acolchado : 2 % ;
+	}
+	img . navig {
+		ancho : 10 % ;
+	}
+	sección . menuicono {
+	acolchado : 0  2 % ;
+	}
+	sección . Texafu ,  sección . texafu2 {
+		alinear texto : centro;
+		ancho : 29 % ;
+		fondo : ninguno;
+		pantalla : bloque en línea;
+		alineación vertical : arriba;
+		acolchado : 1 %  1 % ;
+
+	}
+		sección . texafu2 {
+			ancho : 62 % ;
+	}
+	
+}
+/ * Donde la resolucion sea menor a 1080 * /
+@media ( ancho máximo : 1080 px ) {
+	p . ti1 ,  p . ti2 , a .1 {
+		tamaño de fuente : 1.3 em ;
+		acolchado : 2 % ;
+	}
+	img . navig {
+		ancho : 10 % ;
+	}
+	sección . menuicono {
+	acolchado : 0  2 % ;
+	}
+	sección . Texafu ,  sección . texafu2 {
+		alinear texto : centro;
+		ancho : 29 % ;
+		fondo : ninguno;
+		pantalla : bloque en línea;
+		alineación vertical : arriba;
+		acolchado : 1 %  1 % ;
+
+	}
+		sección . texafu2 {
+			ancho : 62 % ;
+	}
+
+}
+/ * Donde la resolucion sea menor a 800px * /
+@media ( ancho máximo : 800 px ) {
+	sección # icp {
+		relleno : 1 %  0 ;
+	}
+	section # icp  section # ici , section # icp  section # icc , section # icp  section # icd {
+		pantalla : bloque;
+		margen : 1 %  1 % ;
+		ancho : 95 % ;
+	}
+	a .1 {
+		tamaño de fuente : 1.3 em ;
+	}
+
+	sección . menuins {
+		ancho : 98 % ;
+		alineación vertical : arriba;
+		pantalla : bloque;
+		margen : 1 % ;
+	}
+	sección # conins {
+		ancho : 98 % ;
+		acolchado : 1 % ;
+	}
+	cuerpo # inst {
+		acolchado : 3 % ;
+	}
+	img . navig {
+	ancho : 10 % ;
+ 
+	}
+		/ * Sección para el menú * /
+	sección # contmenu {
+		ancho : 100 % ;
+		relleno : 0  0 ;
+	}
+	/ * menu nav * /
+	sección . menuicono {
+	ancho : 24 % ;
+	relleno : 0  0 ;
+	}
+	sección . icononombre {
+		color : blanco
+		tamaño de fuente : 1 em ;
+	}
+	/ * Seccion Indice Contenido Principal Usuarios * /
+	sección # icpusu {
+		ancho : 98 % ;
+		relleno : 0 %  1 % ;
+	}
+
+	/ * Índice de sección Contenido General Usuarios y contenido derecha * /
+	sección . icgralusu , sección # icderusu , sección . icgralusutabla , sección . icgralusucentro {
+		ancho : 98 % ;
+		pantalla : bloque;
+		acolchado : 2 %  1 % ;
+	}
+	sección # cabina {
+		alinear texto : centro;
+	}
+	
+	sección . Texafu ,  sección . texafu2 {
+		ancho : 98 % ;
+		pantalla : bloque;
+		acolchado : 1 %  1 % ;
+
+	}
+	sección . llena1 {
+		ancho : 25 % ;
+	}
+
+	sección . llena2 {
+		ancho : 44 % ;
+	}
+	p . titulo {
+		tamaño de fuente : .8 em ;
+	}
+		tabla . gral {
+	ancho : 80 % ;
+	}
+	img . equipo_tabla {
+		ancho : 30 % ;
+	}
+	
+	
+}
+
+
+/ * Donde la resolucion sea menor a 600px * /
+@media ( ancho máximo : 600 px ) {
+	sección # icp {
+		relleno : 1 %  0 ;
+	}
+	section # icp  section # ici , section # icp  section # icc , section # icp  section # icd {
+		pantalla : bloque;
+		margen : 1 % ;
+	}
+}
